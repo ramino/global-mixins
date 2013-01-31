@@ -1,0 +1,71 @@
+// Mixins
+// --------------------
+
+// Clear
+// --------------------
+.clear {
+    display: table;
+    content: "";
+	*zoom: 1;
+
+	&:before, &:after {
+		line-height: 0;
+	}
+	
+	  &:after {
+		  clear: both;
+	  }
+}
+
+// Size
+// --------------------
+.size(@height, @width) {
+	height: @height;
+	width: @width;
+}
+.square(@size) {
+	.size(@size, @size);
+}
+
+// Centered
+// --------------------
+.center(@top-bottom) {
+	margin: @top-bottom auto;
+	.clear();
+}
+
+// Text
+// --------------------
+.text-indent() {
+	background: transparent;
+	color: transparent;
+	text-indent: -9999px;
+	line-height: 0;
+	font-size: 0;
+}
+
+// Border
+// --------------------
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// Opacity
+// --------------------
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+
+// Sprite
+// --------------------
+.sprite(@x, @y) {
+	background: .sprite-path;
+	background-position: -(@x) -(@y);
+}
+
+.sprite-path {
+	background: url("..") no-repeat;
+}

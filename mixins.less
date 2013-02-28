@@ -2,23 +2,22 @@
 // --------------------
 
 // Clear
+// --------
 .clear {
-		display: table;
-		content: "";
-	*zoom: 1;
-
-	&:before, &:after {
-		line-height: 0;
-	}
-
-	&:after {
-		clear: both;
-	}
+  &:before,
+  &:after {
+    display: block;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
 }
 
 // Size
 // --------------------
-.size(@height, @width) {
+.size(@width, @height) {
 	height: @height;
 	width: @width;
 }

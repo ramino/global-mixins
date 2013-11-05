@@ -1,7 +1,7 @@
-Less mixiny
+LESS mixiny
 ==========
 
-Mixiny, ktoré často používam v jednom súbore.
+Používam bootstrap, ale niekedy potrebujem aj niečo naviac.
 
 * absolute
 * rgba

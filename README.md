@@ -1,7 +1,9 @@
 LESS mixiny
 ==========
 
-Používam bootstrap, ale niekedy potrebujem aj niečo naviac.
+Používam **bootstrap3**, ale niekedy potrebujem aj niečo naviac.
 
-* absolute
-* rgba
+Najnovšia verzia obsahuje mixin pre **position: absolute** a **RGBA**.
+
+1. **Absolútna pozícia** `.absolute(1px,auto,1px,2px);`
+2. **rgba** `.rgba(#fff,0.5);`

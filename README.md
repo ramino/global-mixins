@@ -1,13 +1,6 @@
 LessMixins
 ==========
 
-Less mixins
-* clear
-* size
+Rozšírenie bootstrap3 mixins.less
 * absolute
-* center
-* text-indent
-* border-radius
-* opacity
-* sprite
-* sprite-path
+* rgba

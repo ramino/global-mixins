@@ -1,6 +1,7 @@
-LessMixins
+Less mixiny
 ==========
 
-Rozšírenie bootstrap3 mixins.less
+Mixiny, ktoré často používam v jednom súbore.
+
 * absolute
 * rgba

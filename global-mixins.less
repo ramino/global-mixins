@@ -7,25 +7,25 @@
 
 /* .absolute */
 .absolute(@top, @right, @bottom, @left) {
-  position: absolute;
-  top: @top;
-  right: @right;
-  bottom: @bottom;
-  top: @top;
+	position: absolute;
+	top: @top;
+	right: @right;
+	bottom: @bottom;
+	left: @left;
 }
 /* /.absolute */
 
 /* .RGBA LESS mixin - http://dan.cx/2012/05/rgba-in-ie */
 .rgba(@colour, @alpha) {
-  @alphaColour: hsla(hue(@colour), saturation(@colour), lightness(@colour), @alpha);
-  @ieAlphaColour: argb(@alphaColour);
-   
-  background-color: @colour;
-  background-color: @alphaColour; 
-   
-  // IE hacks
-  zoom: 1;
-  background-color: transparent\9;
-  -ms-filter:  "progid:DXImageTransform.Microsoft.gradient(startColorstr=@{ieAlphaColour}, endColorstr=@{ieAlphaColour})"; // IE 8+
-  filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{ieAlphaColour}, endColorstr=@{ieAlphaColour})"; // IE 6 & 7
+	@alphaColour: hsla(hue(@colour), saturation(@colour), lightness(@colour), @alpha);
+	@ieAlphaColour: argb(@alphaColour);
+
+	background-color: @colour;
+	background-color: @alphaColour; 
+
+	// IE hacks
+	zoom: 1;
+	background-color: transparent\9;
+	-ms-filter:	 "progid:DXImageTransform.Microsoft.gradient(startColorstr=@{ieAlphaColour}, endColorstr=@{ieAlphaColour})"; // IE 8+
+	filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{ieAlphaColour}, endColorstr=@{ieAlphaColour})"; // IE 6 & 7
 }
